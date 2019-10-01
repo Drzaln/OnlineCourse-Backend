@@ -9,6 +9,7 @@ const bodyParser = require('body-parser')
 // const book = require('./route/book')
 // const borrow = require('./route/borrow')
 const user = require('./src/routes/user')
+const category = require('./src/routes/category')
 
 app.use(
   bodyParser.urlencoded({
@@ -42,3 +43,4 @@ app.use(logger('dev'))
 // book(app)
 // borrow(app)
 user(app)
+category(app)
